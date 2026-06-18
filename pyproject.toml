@@ -1,0 +1,31 @@
+[project]
+name = "agent-swarm-lab"
+version = "0.1.0"
+description = "A beginner-to-professional learning lab for agentic and multi-agent systems."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+    "anthropic>=0.40.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+# Used by the test suite. Install with: uv sync --extra dev
+dev = ["pytest>=8.0.0"]
+# Optional second provider for the OpenAI adapter. Install with: uv sync --extra openai
+openai = ["openai>=1.0.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# Only `shared/` is an importable package. Labs under levels/ are standalone scripts
+# that import from `shared`, so they need the project installed (uv sync / pip install -e .).
+[tool.setuptools]
+packages = ["shared"]
+
+[tool.pytest.ini_options]
+testpaths = ["levels"]
+# importlib mode lets multiple labs each have a tests/test_lab.py without name clashes.
+addopts = "-q --import-mode=importlib"
