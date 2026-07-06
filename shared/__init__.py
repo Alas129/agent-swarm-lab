@@ -5,6 +5,14 @@ Public surface:
 """
 
 from shared.llm import LLMClient, MissingCredentialsError
+from shared.retrieval import VectorStore, SimpleEmbedder, cosine
 from shared.tracing import Tracer
 
-__all__ = ["LLMClient", "MissingCredentialsError", "Tracer"]
+__all__ = [
+    "LLMClient",
+    "MissingCredentialsError",
+    "Tracer",
+    "VectorStore",
+    "SimpleEmbedder",
+    "cosine",
+]
