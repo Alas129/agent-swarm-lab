@@ -19,8 +19,18 @@ See also the [glossary](glossary.md) for quick term definitions with sources.
 - [**Basic memory**](../levels/01-foundations/04-basic-memory/README.md) — agents are
   stateless by default; how conversation memory is constructed and why context is finite.
 
+## Tools, Memory & Reasoning (Level 2)
+
+- [**Structured output**](../levels/02-tools-memory-reasoning/01-structured-output/README.md) —
+  constraining model output to a schema (typed JSON), validation, and repair loops.
+- [**Planning & reflection**](../levels/02-tools-memory-reasoning/02-planning-and-reflection/README.md) —
+  plan-and-execute and reflexion (self-critique + retry) as reliability strategies.
+- [**Memory & embeddings**](../levels/02-tools-memory-reasoning/03-memory-and-embeddings/README.md) —
+  embeddings, cosine similarity, vector stores, and long- vs short-term memory.
+- [**RAG**](../levels/02-tools-memory-reasoning/04-rag-agent/README.md) — retrieval-augmented
+  generation: grounding answers in retrieved evidence with citations.
+
 ## Coming next
 
-Concept docs for Levels 2–6 (reasoning & planning, orchestration topologies, communication
-protocols, frameworks, and production concerns) land as those sections are built. See the
-[roadmap](../ROADMAP.md).
+Concept docs for Levels 3–6 (orchestration topologies, communication protocols, frameworks,
+and production concerns) land as those sections are built. See the [roadmap](../ROADMAP.md).
