@@ -27,7 +27,7 @@ systems — **beginner → professional** — in deliberate, in-depth steps.
 |------:|-------|--------|
 | 0 | [Orientation & Setup](levels/00-orientation/) | ✅ built |
 | 1 | [Foundations — single agent](levels/01-foundations/) | ✅ built |
-| 2 | Tools, Memory & Reasoning | 🔜 planned |
+| 2 | [Tools, Memory & Reasoning](levels/02-tools-memory-reasoning/) | ✅ built |
 | 3 | Multi-Agent Orchestration | 🔜 planned |
 | 4 | Communication Protocols (MCP, A2A, FIPA-ACL) | 🔜 planned |
 | 5 | Frameworks in Practice | 🔜 planned |
